@@ -89,38 +89,54 @@
 
     <!-- Main content -->
     
-    
     <div class="container">
-        <div class="row">
-            <div class="col-xxl-12 mt-5">
-              <!-- general max width column for "About Me" -->
-                <h1 class="text-center text-light">About Me</h1>
-                <hr class="bg-light">
-                <div class="card text-left">
-                  <div class="card-body border border-4 border-dark">
-                    <div class="row">
-                      <!-- Columns for picture and text of about me -->
-                      <div class="col-xxl-6">
-                        <p class="text-dark fs-4 mt-2 p-3">
-                          Hello, my name is David Martin and I'm an aspiring developer, whether that be on front end, back end, databases, python, or anything else. I'm currently a student at Edinburgh College, and I'm studying Cyber security, Software development and web. I'm also a member of the ECSA Student Class Representatives, an organization meant for helping students communicate with the school. 
-                        </p>
-                        <p class="text-dark fs-4 mt-2 p-3">
-                          I'm currently working on a few projects, including this website, and I'm always looking for more. I will be making an SQL database to attach to this site, if it isn't there already. If you have any ideas for projects, or just want to talk, feel free to reach out to me at: dm2kbe@gmail.com                      </div>
-                      <div class="col-xxl-6 mt-5">
-                        <img src="images/profile-pic.png" height="75%" alt="" class=" mx-auto d-block">
-                      </div>
-
-                      
-                    </div>
-                  </div>
-
-                </div>
-            </div>
-
+      <div class="row mt-5">
+        <div class="col-xxl-3">
+          <!-- empty div for formatting -->
         </div>
+
+        <div class="col-xxl-6">
+          <div class="card text-center" style="height: 35rem;">
+            <div class="card-body  border border-4 border-dark">
+              <h1 class="card-title text-center text-dark mt-2 ">Register</h1>
+
+              <form>
+                <div class="row">
+                  <div class="col-6 d-block mx-auto mt-3 text-dark">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control border border-dark"  id="inputEmail">
+                  </div>
+                </div>
+                <!-- separating rows for email and password -->
+                <div class="row">
+                  <div class="col-6 d-block mx-auto mt-3 text-dark">
+                    <label for="inputPassword" class="form-label">Password</label>
+		                <input type="password" class="form-control border border-dark" id="inputPassword">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 d-block mx-auto mt-3 text-dark">
+                    <label for="inputPassword" class="form-label">Affiliation</label>
+		                <input type="affiliation" class="form-control border border-dark" id="inputAffiliation">
+                  </div>
+                </div>
+                <!-- separating rows for form and submit button -->
+                <div class="row">
+                  <div class="col-6 d-block mx-auto mt-5 text-dark">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+
+                    <h4 class="text-center mt-3">Already a user?</h4>
+                    <a href="login.html" class="btn btn-primary">Login</a>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+   
 
-
+ </div>
 </body>
 
 

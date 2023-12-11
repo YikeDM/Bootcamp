@@ -24,8 +24,8 @@
     <nav class="navbar border-bottom border-1 navbar-expand-xxl navbar-dark bg-dark bg-gradient p-1">
         <div class="container-fluid">
           
-          <a class="navbar-brand" href="/www/index.html">
-            <img src="/www/images/pycodenb.png" alt="" width="50" height="50" class="d-block mx-2">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/pycodenb.png" alt="" width="50" height="50" class="d-block mx-2">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -33,20 +33,20 @@
           <div class="collapse navbar-collapse fs-4" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link  text-center mx-2" aria-current="page" href="/www/index.html">Home</a>
+                <a class="nav-link  text-center mx-2" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item   text-center mx-2">
-                <a class="nav-link" href="/www/about.html">About</a>
+                <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item   text-center mx-2">
-                <a class="nav-link" href="/www/product.html">Products</a>
+                <a class="nav-link" href="product.html">Products</a>
               </li>
               <li class="nav-item   text-center mx-2">
-                <a class="nav-link" href="/www/blog.html" >Blog</a>
+                <a class="nav-link" href="blog.html" >Blog</a>
               </li>
               
               <li class="nav-item   text-center mx-2">
-                <a class="nav-link" href="/www/contact.html" >Contact</a>
+                <a class="nav-link" href="contact.html" >Contact</a>
               </li>
               <li class="nav-item   text-center mx-2">
                 <a class="nav-link" href="https://github.com/YikeDM" target="_blank">Github</a>
@@ -112,8 +112,38 @@
                           Email: dm2kbe@gmail.com
                         </h2>
                         <h2 class="text-center text-dark mt-5">
-                          Edinburgh College: Teams via name & EC Number
+                          Submit Contact Form
                         </h2>
+                        
+                        <div class="card text-center">
+                          <div class="card-body border border-4 border-light bg-dark">
+                            <form action="submit-form" method="post">
+                              <div class="row mt-2">
+                                <!-- Column for name input -->
+                                <div class="col-xxl-3 d-block mx-auto">
+                                  <label for="name" class="text-light  border-bottom border-1">Name</label> <br>
+                                  <input type="text" class="mt-2" id="name" name="name" placeholder="Enter your name" required>
+                                </div>
+
+                                <div class="col-xxl-3 d-block mx-auto">
+                                  <label for="email" class="text-light border-bottom border-1">Email</label> <br>
+                                  <input type="email" class="mt-2" id="email" name="email" placeholder="Enter your email" required>
+                                </div>
+
+                                <div class="col-xxl-3 d-block mx-auto">
+                                  <label for="message" class="text-light border-bottom border-1">Message</label> <br>
+                                  <textarea id="message" class="mt-2" name="message" placeholder="Enter your message" rows="4" required></textarea>
+                                </div>
+
+                                <div class="col-xxl-3 d-block mx-auto">
+                                  <input type="submit" value="Submit" class="d-block mx-auto p-2 mt-4">
+
+                                  <input type="reset" value="Reset" class="d-block mx-auto p-2 mt-2">
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
                   </div>
 
                 </div>
