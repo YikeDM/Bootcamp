@@ -1,9 +1,16 @@
-console.log('Hello World')
+a = Number(prompt("Enter a number: "));
+b = Number(prompt("Enter another number: "));
+c = Number(prompt("Enter a third number: "));
 
-alert("Hello World");
-
-let boob = document.querySelector("#skills");
-boob.textContent = "Hello";
-
-let nameer = prompt("What is your name?");
-alert("Hello " + nameer);
+if (a > b && b > c)
+{
+    alert("Descending order");
+}
+else if (a < b && b < c)
+{
+    alert("Ascending order");
+}
+else
+{
+    alert("Neither ascending nor descending order");
+}
