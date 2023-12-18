@@ -13,7 +13,8 @@
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    
+    <script src="scripts/RPSJS.js"></script>
+
     <!-- Background color -->
     <div
     class="full-width mh-100 bg-dark text-secondary"
@@ -59,7 +60,7 @@
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item text-center" href="https://github.com/YikeDM/self/blob/master/RPS.py" target="_blank">Rock Paper Scissors on Python</a></li>
                   <li><a class="dropdown-item text-center" href="https://github.com/YikeDM/self/blob/master/blackjack.py" target="_blank">Blackjack on Python</a></li>
-                  <li><a class="dropdown-item text-center" href="RPSJS.html" >Rock Paper Scissors on JavaScript</a></li>
+                  <li><a class="dropdown-item text-center" href="RPSJS.html">Rock Paper Scissors on JavaScript</a></li>
 
                   <li><hr class="dropdown-divider text-center"></li>
                   <li><a class="dropdown-item text-center" href="#">More projects to come</a></li>
@@ -92,59 +93,61 @@
     <!-- Main content -->
     
     <div class="container">
-      <div class="row mt-5">
-        <div class="col-xxl-3">
-          <!-- empty div for formatting -->
-        </div>
 
-        <div class="col-xxl-6">
-          <div class="card text-center" style="height: 35rem;">
-            <div class="card-body  border border-4 border-dark">
-              <h1 class="card-title text-center text-dark mt-5 ">Login</h1>
+        <div class="row">
+            <div class="col-12 mt-5">
+                <div class="card text-left" style="min-height: 600px;">
+                    <div class="card-body border border-4 border-dark" >
+                      <div class="row mt-5">
+                        <!-- column for image(s) -->
+                        <div class="col-lg-3">
+                          <img src="images/pycodenb.png" alt="Product 1" class="card-img-top bg-dark">
+                        </div>
+                        <!-- column for text -->
+                          <div class="col-lg-8">
+                            <h1 class="text-dark mb-5 text-center">Rock Paper Scissors</h1>
+                            
+                            <!-- Rows for rock paper scissors buttons. -->
+                            <div class="row">
+                                <div class="col-4">
+                                    <button type="button" class="btn btn-outline-dark btn-lg d-block mx-auto" id="rock" onclick="rps(rock, playerScore, computerScore)">Rock</button>
+                                </div>
+                                <div class="col-4">
+                                    <button type="button" class="btn btn-outline-dark btn-lg d-block mx-auto" id="paper" onclick="rps(paper, playerScore, computerScore)">Paper</button>
+                                </div>
+                                <div class="col-4">
+                                    <button type="button" class="btn btn-outline-dark btn-lg d-block mx-auto" id="scissors" onclick="rps(scissors, playerScore, computerScore)">Scissors</button>
+                                
+                            </div>
+                            <div class="row p-5">
+                                <div class="col-xxl-1"></div>
+                                <div class="col-xxl-10">
+                                    <h1 class="text-dark text-center" id="player" style="white-space: nowrap;">Player's Pick:</h1>
+                                    <h1 class="text-dark text-center" id="computer" style="white-space: nowrap;">Computer's Pick:</h1>
+                                    <h1 class="text-dark text-center" id="result" style="white-space: nowrap;">Result: </h1>
+                                </div>
+                                <div class="col-xxl-4 mt-5">
+                                    <h1 class="text-dark text-center" id="scoreComputer" style="white-space: nowrap;">Computer: 0</h1>
+                                </div>
+                                <div class="col-xxl-4 mt-5">
+                                    <h1 class="text-dark text-center" id="scorePlayer" style="white-space: nowrap;">Player: 0</h1>
+                                </div>
+                                <div class="col-xxl-4 mt-5">
+                                    <button type="button" class="btn btn-outline-dark btn-lg d-block mx-auto" id="reset" onclick="reset()">Reset</button>
+                                </div>
+                            </div>
 
-              <form>
-                <div class="row">
-                  <div class="col-6 d-block mx-auto mt-3 text-dark">
-                    <label for="inputEmail" class="form-label">Email</label>
-                    <input type="email" class="form-control border border-dark"  id="inputEmail">
+                          </div>
+                      </div>
+                      
+                    </div>
                   </div>
-                </div>
-                <!-- separating rows for email and password -->
-                <div class="row">
-                  <div class="col-6 d-block mx-auto mt-3 text-dark">
-                    <label for="inputPassword" class="form-label">Password</label>
-		                <input type="password" class="form-control border border-dark" id="inputPassword">
-                  </div>
-                </div>
-                <!-- separating rows for password and submit button -->
-                <div class="row">
-                  <div class="col-6 d-block mx-auto mt-5 text-dark">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-
-                    <h4 class="text-center mt-3">New user? Register here:</h4>
-                    <a href="reg.html" class="btn btn-primary">Register</a>
-                  </div>
-              </form>
             </div>
-          </div>
         </div>
-      </div>
     </div>
+   
 
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-
-
+ </div>
 </body>
 
 

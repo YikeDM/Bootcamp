@@ -1,16 +1,38 @@
-a = Number(prompt("Enter a number: "));
-b = Number(prompt("Enter another number: "));
-c = Number(prompt("Enter a third number: "));
 
-if (a > b && b > c)
+function isPrime(num)
 {
-    alert("Descending order");
+    if (num < 0)
+    {
+        return false;
+    }
+    
+    for (let i = 2; i < num; i++)
+    {
+        if (num % i === 0)
+        {
+            return false;
+        }
+    }
+
+    return true;
 }
-else if (a < b && b < c)
+
+function prime()
 {
-    alert("Ascending order");
-}
-else
-{
-    alert("Neither ascending nor descending order");
+
+    let a = Number(prompt("Enter a number: "));
+    
+    switch(isPrime(a))
+    {
+        case true:
+            alert("The number is prime.");
+            break;
+        case false:
+            alert("The number is not prime.");
+            break;
+        default:
+            alert("Invalid input.");
+            break;
+    }
+
 }
