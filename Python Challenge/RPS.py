@@ -96,11 +96,11 @@ while(1):
 
     playerinput = ""
 
-    while(playerinput != "Rock" and playerinput != "Paper" and playerinput != "Scissors"):
+    while(playerinput not in choices):
         playerinput = input("Rock, Paper, or Scissors? ")
         playerinput = playerinput.capitalize()
 
-        if(playerinput != "Rock" and playerinput != "Paper" and playerinput != "Scissors"):
+        if(playerinput not in choices):
             print("Please enter Rock, Paper, or Scissors")
             sleep(0.5)
 
