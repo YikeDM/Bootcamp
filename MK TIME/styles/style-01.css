@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'copperplate_gothic_std29_bc';
+    src: url('../webfont/copperplate_gothic_std_29_bc-webfont.woff2') format('woff2'),
+         url('../webfont/copperplate_gothic_std_29_bc-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.copperplate{
+    font-family: 'copperplate_gothic_std29_bc';
+    font-size: 20px;
+    color: #000000;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+    font-variant: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    word-spacing: normal;
+    text-align: left;
+    vertical-align: middle;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    
+    background-image: url("../images/watches.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
