@@ -12,12 +12,12 @@
         <!-- Bootstrap and scripts-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-        <script scr="scripts/global.js" defer></script>
+        <script defer src="scripts/index.js"></script>
         
        
     <!-- Navbar -->
 
-        <nav class="navbar navbar-expand-xxl p-0 bg-light sticky-top bg-body-tertiary d-block mx-auto border-start border-end border-dark border-1 copperplate">
+        <nav class="navbar navbar-expand-xxl p-0 bg-light sticky-top bg-body-tertiary d-block mx-auto border border-dark border-4 copperplate">
             <div class="container-fluid ">
                 <a class="navbar-brand fs-1 ms-5 ms-auto" href="#">
                     <img src="images/MK-TIME.png" alt="" width="100" height="100" class="d-block mx-auto justify-content-center ms-5">
@@ -28,7 +28,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="navbar-nav ms-auto mb-2 mb-lg-0 fs-1 me-5">
                         <a class="navbar-brand fs-1 text-center d-block  text-dark" href="#">PRODUCTS</a>
+                    </div>
+                    <div class="navbar-nav ms-auto mb-2 mb-lg-0 fs-1 me-5">
                         <a class="navbar-brand fs-1 text-center d-block  text-dark" href="#">ABOUT US</a>
+                    </div>
+                    <div class="navbar-nav ms-auto mb-2 mb-lg-0 fs-1 me-5">
+                        <a class="navbar-brand fs-1 text-center d-block  text-dark" href="#">CART</a>
                     </div>
 
                 
@@ -39,7 +44,7 @@
 
 
 
-                    <form class="d-flex copperplate bg-" role="search">
+                    <form class="d-flex copperplate mb-2" role="search">
                         <input class="form-control me-4 border-dark" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-light btn-outline-dark" type="submit">Search</button>
                     </form>
@@ -48,10 +53,12 @@
         </nav>
     </div>
         <!-- Navbar -->
-
+    <div class="background-container background-animation"></div>
+        
         <!-- Banner -->
     <div class="container-fluid mt-5 p-0 copperplate">
         <div class="col-xxl-12 bg-dark" style="height: 200px;">
+            
             <div class="row m-0">
                 <div class="col-xxl-6 bg-dark d-block mx-auto mt-4">
                     <h1 class="text-center text-light">MK TIME</h1>
@@ -61,35 +68,102 @@
             
         </div>
         <!-- Banner -->
-
         <!-- Products -->
-        <div class="col-xxl-12">
+        <div class="col-xxl-12 ">
             <div class="row m-0">
-                <div class="col-xxl-5 bg-light d-block mx-auto mt-5" style="height: 500px;">
-                    <ul class="list-group list-group-horizontal">
-                        <a href="products.html">
+                <div class="col-xxl-5 d-block mx-auto mt-5 border-dark border border-5 " style="background-color: rgb(189, 189, 189);">
+                
+                    <h1 class="text-center mt-4">Special Offers</h1>
+                    <!-- product cards -->
+                    <div class="row m-0">
+                        <div class="card mt-5 d-block mx-auto mb-5  border border-dark" style="width: 14rem;">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Romanson</h5>
+                                <h5 class="card-title text-center">Dark Magic</h5>
+                              <img src="images/products/watch1.jpeg" alt="" width="125" height="200" class="d-block mx-auto justify-content-center border border-dark">
+                              <p class="card-text text-center mt-2">£246.99</p>
+                              <button type="button" class="btn btn-outline-dark btn-lg d-block mx-auto" id="cart" data-bs-toggle="popover" data-bs-title="Added to cart!" data-bs-trigger="focus" data-bs-content="Please visit the cart to finalize purchase" onclick="addCart()">Add to cart</button>
+                            </div>
+                          </div>
 
-                            <li class="list-group-item">An item</li>
-                        </a>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
-                      </ul>
-                      
-                    
-                </div>
-                <div class="col-xxl-5 bg-light d-block mx-auto mt-5 border-2 mt-5" style="height: 500px;">
-                    <h1 class="text-center">Winter Collection</h1>
-                    
-                </div>
-      
-        <!-- footer -->
+                          <div class="card mt-5 d-block mx-auto mb-5 border border-dark" style="width: 14rem;">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Alpine</h5>
+                                <h5 class="card-title text-center">Sapphire</h5>
+                              <img src="images/products/watch2.jpg" alt="" width="125" height="200" class="d-block mx-auto justify-content-center border border-dark">
 
+                              <p class="card-text text-center mt-2">£499.99</p>
+                              <button type="button" class="btn btn-outline-dark btn-lg d-block mx-auto" id="cart" data-bs-toggle="popover" data-bs-title="Added to cart!" data-bs-trigger="focus" data-bs-content="Please visit the cart to finalize purchase" onclick="addCart()">Add to cart</button>
+                            </div>
+                          </div>
+
+                          <div class="card mt-5 d-block mx-auto mb-5 border border-dark" style="width: 14rem;">
+                            
+                            <div class="card-body">
+                              <h5 class="card-title text-center">maurice de mauriac</h5>
+                              <h5 class="card-title text-center">Ice</h5>
+                              <img src="images/products/watch3.jpeg" alt="" width="125" height="200" class="d-block mx-auto justify-content-center border border-dark">
+                              <p class="card-text text-center mt-2">£159.98</p>
+                              <button type="button" class="btn btn-outline-dark btn-lg d-block mx-auto" id="cart" data-bs-toggle="popover" data-bs-title="Added to cart!" data-bs-trigger="focus" data-bs-content="Please visit the cart to finalize purchase" onclick="addCart()">Add to cart</button>
+                            </div>
+                          </div>
+                    </div>
+                    <!-- product cards -->
+
+                    <!-- product cards -->
+                </div>
+                <div class="col-xxl-5 d-block mx-auto mt-5 border-dark border border-5 " style="background-color: rgb(189, 189, 189);">
+                    <h1 class="text-center mt-4">Winter Collection</h1>
+                    <div class="row m-0 ">
+                        <div class="card mt-5 d-block mx-auto mb-5  border border-dark" style="width: 14rem;">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Romanson</h5>
+                                <h5 class="card-title text-center">Dark Magic</h5>
+                              <img src="images/products/watch1.jpeg" alt="" width="125" height="200" class="d-block mx-auto justify-content-center border border-dark">
+                              <p class="card-text text-center mt-2">£246.99</p>
+                              <button type="button" class="btn btn-outline-dark btn-lg d-block mx-auto" id="cart" data-bs-toggle="popover" data-bs-title="Added to cart!" data-bs-trigger="focus" data-bs-content="Please visit the cart to finalize purchase" onclick="addCart()">Add to cart</button>
+                            </div>
+                          </div>
+
+                          <div class="card mt-5 d-block mx-auto mb-5 border border-dark" style="width: 14rem;">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Alpine</h5>
+                                <h5 class="card-title text-center">Sapphire</h5>
+                              <img src="images/products/watch2.jpg" alt="" width="125" height="200" class="d-block mx-auto justify-content-center border border-dark">
+
+                              <p class="card-text text-center mt-2">£499.99</p>
+                              <button type="button" class="btn btn-outline-dark btn-lg d-block mx-auto" id="cart" data-bs-toggle="popover" data-bs-title="Added to cart!" data-bs-trigger="focus" data-bs-content="Please visit the cart to finalize purchase" onclick="addCart()">Add to cart</button>
+                            </div>
+                          </div>
+
+                          <div class="card mt-5 d-block mx-auto mb-5 border border-dark" style="width: 14rem;">
+                            
+                            <div class="card-body">
+                              <h5 class="card-title text-center">maurice de mauriac</h5>
+                              <h5 class="card-title text-center">Ice</h5>
+                              <img src="images/products/watch3.jpeg" alt="" width="125" height="200" class="d-block mx-auto justify-content-center border border-dark">
+                              <p class="card-text text-center mt-2">£159.98</p>
+                              <button type="button" class="btn btn-outline-dark btn-lg d-block mx-auto" id="cart" data-bs-toggle="popover" data-bs-title="Added to cart!" data-bs-trigger="focus" data-bs-content="Please visit the cart to finalize purchase" onclick="addCart()">Add to cart</button>
+                            </div>
+                          </div>
+                    </div>
+                    <!-- product cards -->
+
+                </div>
+                
+                <!-- footer -->
+                <div class="background-container background-animation"></div>
         <footer>
+            
             <div class="container-fluid p-5 mt-5">
                 <div class="row m-0">
-
-                    <div class=" col-lg-5 bg-light mx-auto d-block mt-2" style="height: 400px; width: 500px">
-                        <img src="images/MK-TIME.png" alt="" width="120" height="120" class="d-block mx-auto justify-content-center ms-5 mt-2">
+                    
+                    <div class=" col-lg-5 bg-light mx-auto d-block mt-2 border-dark border border-5" style="height: 400px; width: 500px">
+                        <img src="images/MK-TIME.png" alt="" width="120" height="120" class="d-block mx-auto justify-content-center ms-auto mt-2">
                         <p class="text-center mt-2">Address: </p>
                         <p class="text-center">Building 999 </p>
                         <p class="text-center">EH99 9EH </p>
@@ -98,13 +172,16 @@
 
                     </div>
                     
-                    <div class="col-lg-5 bg-light mx-auto d-block mt-2" style="height: 400px; width: 500px">
+                    <div class="col-lg-5 bg-light mx-auto d-block mt-2 border-dark border border-5" style="height: 400px; width: 500px">
+                        <img src="images/MK-TIME.png" alt="" width="120" height="120" class="d-block mx-auto justify-content-center ms-auto mt-2">
                         <h1 class="text-center mt-3">Contact Us</h1>
                         <p class="text-center mt-5">Email: MKWATCHES@GMAIL.COM </p>
                         <p class="text-center">Phone: 0131 999 9999 </p>
                         <p class="text-center">Business number: 0800 999 9999</p>
                     </div>
                 </div>
+
+                
             </div>
         </footer>
        
