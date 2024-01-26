@@ -33,9 +33,33 @@ html {
     overflow-y: scroll;
 }
 
+.banner{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.showimage{
+  min-height: 30rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.text-settings {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+  padding: 3rem;
+}
+
+@media (min-width: 768px) {
+
+  .showcase .text-settings {
+    padding: 7rem;
+  }
+}
+
 body {
     
-    background-image: url("../images/watches-phone.jpg");
+    background-image: url("../images/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
