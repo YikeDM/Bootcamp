@@ -38,6 +38,12 @@ html {
   padding-bottom: 5rem;
 }
 
+.productbar{
+  padding: 3rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .showimage{
   min-height: 30rem;
   background-size: cover;
@@ -52,7 +58,7 @@ html {
 
 @media (min-width: 768px) {
 
-  .showcase .text-settings {
+  .showcase .text-settings .productbar{
     padding: 7rem;
   }
 }
@@ -68,6 +74,7 @@ body {
 /* animated bacgkround - from alvarotrigo.com */
 
 .background-container {
+    pointer-events: none;
     width: 115%;
     height: 115%;
     position: fixed;
@@ -78,6 +85,7 @@ body {
     background: linear-gradient(to right bottom, #858585, #525252);
   }
   .background-animation {
+    pointer-events: none;
     width: 100%;
     height: 115%;
     position: fixed;
