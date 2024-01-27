@@ -44,6 +44,10 @@ html {
   margin-bottom: auto;
 }
 
+.bg-light{
+  background-color: #ffffff !important;
+}
+
 .showimage{
   min-height: 30rem;
   background-size: cover;
