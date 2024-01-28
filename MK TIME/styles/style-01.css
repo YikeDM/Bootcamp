@@ -8,7 +8,7 @@
 }
 
 
-
+/* font */
 
 .copperplate{
     font-family: 'copperplate_gothic_std29_bc';
@@ -29,37 +29,107 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* creates a side bar to keep scaling consistent */
 html {
     overflow-y: scroll;
 }
 
+/* padding */
 .banner{
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
+/* padding - product */
 .productbar{
   padding: 3rem;
   margin-top: auto;
   margin-bottom: auto;
 }
 
+.image-swap :nth-child(4){
+  text-decoration: line-through;
+}
+
+
+/* same as above */
+.productfilter{
+  padding: 3rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.productstyle{
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+}
+
+.staffstyle{
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+}
+
+.searchbar{
+  
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+/* button and tile styling */
+.tilestyle{
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 0;
+  padding: 1rem 5rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* no-wrap for tiles. */
+.nowrap{
+  white-space: pre;
+  text-align: center;
+}
+
+/* changing bg-light from an extremly light grey to exactly white for image compatability */
 .bg-light{
   background-color: #ffffff !important;
 }
 
+/* image consistent styling for index */
 .showimage{
   min-height: 30rem;
   background-size: cover;
   background-position: center;
 }
 
+/* text styling for index */
 .text-settings {
   margin-top: auto !important;
   margin-bottom: auto !important;
   padding: 3rem;
 }
 
+/* change padding on smaller screen size */
 @media (min-width: 768px) {
 
   .showcase .text-settings .productbar{
@@ -67,6 +137,7 @@ html {
   }
 }
 
+/* background image cover */
 body {
     
     background-image: url("../images/bg.jpg");
@@ -75,7 +146,7 @@ body {
     height: 100%;
 }
 
-/* animated bacgkround - from alvarotrigo.com */
+/* animated bacgkround - from alvarotrigo.com -- I DO NOT OWN THIS -- */
 
 .background-container {
     pointer-events: none;

@@ -13,7 +13,7 @@
         <!-- Bootstrap and scripts-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-        <script defer src="scripts/index.js"></script>
+        <script defer src="scripts/main.js"></script>
         
         
        
@@ -32,7 +32,7 @@
                         <a class="navbar-brand fs-1 text-center d-block  text-dark" href="products.html">PRODUCTS</a>
                     </div>
                     <div class="navbar-nav ms-auto mb-2 mb-lg-0 fs-1 me-5">
-                        <a class="navbar-brand fs-1 text-center d-block  text-dark" href="#">ABOUT US</a>
+                        <a class="navbar-brand fs-1 text-center d-block  text-dark" href="about.html">ABOUT US</a>
                     </div>
                     <div class="navbar-nav ms-auto mb-2 mb-lg-0 fs-1 me-5">
                         <a class="navbar-brand fs-1 text-center d-block  text-dark" href="#">CART</a>
@@ -40,15 +40,16 @@
 
                 
                     <div class="navbar-nav ms-auto mb-2 mb-lg-0 fs-1 me-5">
-                        <a class="navbar-brand fs-1 text-center d-block text-dark" href="#">LOGIN</a>
-                        <a class="navbar-brand fs-1 text-center d-block text-dark" href="#">REGISTER</a>
+                        <a class="navbar-brand fs-1 text-center d-block text-dark" href="login.html">LOGIN</a>
+                        <a class="navbar-brand fs-1 text-center d-block text-dark" href="register.html">REGISTER</a>
                     </div>
 
 
 
                     <form class="d-flex copperplate mb-2" role="search">
-                        <input class="form-control me-4 border-dark" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-light btn-outline-dark" type="submit">Search</button>
+                        <input class="form-control me-4 border-dark searchbar" type="search" placeholder="Search" aria-label="Search">
+                        
+                        <button class="btn btn-light btn-outline-dark searchbar" type="submit">Search</button>
                     </form>
                 </div>
             </div>
@@ -57,15 +58,18 @@
 
         <!-- Navbar -->
 
+
     <div class="container-fluid p-0">
-        
+
+            <!-- banner -->
+
         <section class="bg-light text-center">
             
             <div class="container bg-light mt-5 banner" >
                 <div class="row">
                     
                     <div class="col-lg-12">
-                        <h1 class="text-center mt-5 copperplate fs-1 border">Take a look at our best products</h1>
+                        <h1 class="text-center mt-5 copperplate fs-1 border tilestyle" id="top">Take a look at our best products</h1>
                         <p class="text-center mt-5 fs-4 copperplate">With big name brands and great prices!</p>
                     </div>
                     
@@ -74,30 +78,171 @@
             </div>
             
         <section>
-            <div class="row border-top">
-            <a href="#">
-                <img src="images/productimg.png" alt="" class="img-fluid">
-            </a>
+            <!-- Product cards -->
+            <div class="row border-top m-0">
+            <h1 class="copperplate text-center mt-5 fs-1">Our Products</h1>
+            </div>
+            
+            <div class="row m-0 productfilter">
+                <div class="col-lg-4 ">
+                    <button class="btn btn-dark tilestyle" id="men">Men's <br>Watches</button>
+                </div>
+                <div class="col-lg-4 ">
+                    <button class="btn btn-dark tilestyle" id="women">Women's <br>Watches</button>
+                </div>
+                <div class="col-lg-4 ">
+                    <button class="btn btn-dark tilestyle" id="special">Special <br>Offers</button>
+                </div>
+            </div>
 
+        </section>
 
+        <section>
+            
+            <div class="row m-0 copperplate productfilter">
+                <div class="col-lg-4">
+                    <div class="card mt-5 d-block mx-auto mb-5  border border-dark" style="width: 14rem;">
+                            
+                        <div class="card-body image-swap productstyle">
+                            <h5 class="card-title text-center">Romanson</h5>
+                            <h5 class="card-title text-center">Dark Magic</h5>
+                          <img src="images/products/watch1.jpeg" alt="" width="125" height="200" class="d-block mx-auto justify-content-center border border-dark">
+                          <p class="card-text text-center mt-2">£359</p>
+                          <p class="card-text text-center mt-2">£246.99</p>
+                          <button type="button" class="btn btn-light btn-lg d-block mx-auto" id="cart" data-bs-toggle="popover" data-bs-title="Added to cart!" data-bs-trigger="focus" data-bs-content="Please visit the cart to finalize purchase" onclick="addCart()">Add to cart</button>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mt-5 d-block mx-auto mb-5  border border-dark" style="width: 14rem;">
+                            
+                        <div class="card-body image-swap productstyle">
+                            <h5 class="card-title text-center">Romanson</h5>
+                            <h5 class="card-title text-center">Dark Magic</h5>
+                          <img src="images/products/watch1.jpeg" alt="" width="125" height="200" class="d-block mx-auto justify-content-center border border-dark">
+                          <p class="card-text text-center mt-2">£359</p>
+                          <p class="card-text text-center mt-2">£246.99</p>
+                          <button type="button" class="btn btn-light btn-lg d-block mx-auto" id="cart" data-bs-toggle="popover" data-bs-title="Added to cart!" data-bs-trigger="focus" data-bs-content="Please visit the cart to finalize purchase" onclick="addCart()">Add to cart</button>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mt-5 d-block mx-auto mb-5  border border-dark" style="width: 14rem;">
+                            
+                        <div class="card-body image-swap productstyle">
+                            <h5 class="card-title text-center text-swap">Romanson</h5>
+                            <h5 class="card-title text-center text-swap-2">Dark Magic</h5>
+                          <img src="images/products/watch1.jpeg" alt="" width="125" height="200" class=" d-block mx-auto justify-content-center border border-dark">
+                          <p class="card-text text-center mt-2">£359</p>
+                          <p class="card-text text-center mt-2">£246.99</p>
+                          <button type="button" class="btn btn-light btn-lg d-block mx-auto" id="cart" data-bs-toggle="popover" data-bs-title="Added to cart!" data-bs-trigger="focus" data-bs-content="Please visit the cart to finalize purchase" onclick="addCart()">Add to cart</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="row m-0 copperplate productfilter">
+                <div class="col-lg-4">
+                    <div class="card mt-5 d-block mx-auto mb-5  border border-dark" style="width: 14rem;">
+                            
+                        <div class="card-body image-swap productstyle">
+                            <h5 class="card-title text-center">Romanson</h5>
+                            <h5 class="card-title text-center">Dark Magic</h5>
+                          <img src="images/products/watch1.jpeg" alt="" width="125" height="200" class="d-block mx-auto justify-content-center border border-dark">
+                          <p class="card-text text-center mt-2">£359</p>
+                          <p class="card-text text-center mt-2">£246.99</p>
+                          <button type="button" class="btn btn-light btn-lg d-block mx-auto" id="cart" data-bs-toggle="popover" data-bs-title="Added to cart!" data-bs-trigger="focus" data-bs-content="Please visit the cart to finalize purchase" onclick="addCart()">Add to cart</button>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mt-5 d-block mx-auto mb-5  border border-dark" style="width: 14rem;">
+                            
+                        <div class="card-body image-swap productstyle">
+                            <h5 class="card-title text-center">Romanson</h5>
+                            <h5 class="card-title text-center">Dark Magic</h5>
+                          <img src="images/products/watch1.jpeg" alt="" width="125" height="200" class="d-block mx-auto justify-content-center border border-dark">
+                          <p class="card-text text-center mt-2">£359</p>
+                          <p class="card-text text-center mt-2">£246.99</p>
+                          <button type="button" class="btn btn-light btn-lg d-block mx-auto" id="cart" data-bs-toggle="popover" data-bs-title="Added to cart!" data-bs-trigger="focus" data-bs-content="Please visit the cart to finalize purchase" onclick="addCart()">Add to cart</button>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mt-5 d-block mx-auto mb-5  border border-dark" style="width: 14rem;">
+                            
+                        <div class="card-body image-swap productstyle">
+                            <h5 class="card-title text-center">Romanson</h5>
+                            <h5 class="card-title text-center">Dark Magic</h5>
+                          <img src="images/products/watch1.jpeg" alt="" width="125" height="200" class="d-block mx-auto justify-content-center border border-dark">
+                          <p class="card-text text-center mt-2">£359</p>
+                          <p class="card-text text-center mt-2">£246.99</p>
+                          <button type="button" class="btn btn-light btn-lg d-block mx-auto" id="cart" data-bs-toggle="popover" data-bs-title="Added to cart!" data-bs-trigger="focus" data-bs-content="Please visit the cart to finalize purchase" onclick="addCart()">Add to cart</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="row m-0 copperplate productfilter">
+                <div class="col-lg-4">
+                    <div class="card mt-5 d-block mx-auto mb-5  border border-dark" style="width: 14rem;">
+                            
+                        <div class="card-body image-swap productstyle">
+                            <h5 class="card-title text-center">Romanson</h5>
+                            <h5 class="card-title text-center">Dark Magic</h5>
+                          <img src="images/products/watch1.jpeg" alt="" width="125" height="200" class="d-block mx-auto justify-content-center border border-dark">
+                          <p class="card-text text-center mt-2">£359</p>
+                          <p class="card-text text-center mt-2">£246.99</p>
+                          <button type="button" class="btn btn-light btn-lg d-block mx-auto" id="cart" data-bs-toggle="popover" data-bs-title="Added to cart!" data-bs-trigger="focus" data-bs-content="Please visit the cart to finalize purchase" onclick="addCart()">Add to cart</button>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mt-5 d-block mx-auto mb-5  border border-dark" style="width: 14rem;">
+                            
+                        <div class="card-body image-swap productstyle">
+                            <h5 class="card-title text-center">Romanson</h5>
+                            <h5 class="card-title text-center">Dark Magic</h5>
+                          <img src="images/products/watch1.jpeg" alt="" width="125" height="200" class="d-block mx-auto justify-content-center border border-dark">
+                          <p class="card-text text-center mt-2">£359</p>
+                          <p class="card-text text-center mt-2">£246.99</p>
+                          <button type="button" class="btn btn-light btn-lg d-block mx-auto" id="cart" data-bs-toggle="popover" data-bs-title="Added to cart!" data-bs-trigger="focus" data-bs-content="Please visit the cart to finalize purchase" onclick="addCart()">Add to cart</button>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mt-5 d-block mx-auto mb-5  border border-dark" style="width: 14rem;">
+                            
+                        <div class="card-body image-swap productstyle">
+                            <h5 class="card-title text-center">Romanson</h5>
+                            <h5 class="card-title text-center">Dark Magic</h5>
+                          <img src="images/products/watch1.jpeg" alt="" width="125" height="200" class="d-block mx-auto justify-content-center border border-dark">
+                          <p class="card-text text-center mt-2">£359</p>
+                          <p class="card-text text-center mt-2">£246.99</p>
+                          <button type="button" class="btn btn-light btn-lg d-block mx-auto" id="cart" data-bs-toggle="popover" data-bs-title="Added to cart!" data-bs-trigger="focus" data-bs-content="Please visit the cart to finalize purchase" onclick="addCart()">Add to cart</button>
+                        </div>
+                      </div>
+                </div>
             </div>
         </section>
         
-        <div class="card mt-5 ms-5" style="width: 9rem;">
-            <div class="card-body d-block mx-auto">
-              <a href="#" class="btn btn-dark">Back to top</a>
-            </div>
-          </div>
         
         
     </div>
     <!-- footer -->
-                
+    
+    <div class="card mt-5 ms-5" style="width: 9rem;">
+        <div class="card-body d-block mx-auto">
+
+            <!-- back to top button -->
+          <a href="#top" class="btn btn-dark">Back to top</a>
+        </div>
+      </div>
         <footer>
             
             <div class="container-fluid p-5 mt-5 copperplate">
                 <div class="row m-0">
-                    
+                    <!-- Contact Information -->
                     <div class=" col-lg-5 bg-light mx-auto d-block mt-2 border-dark border border-5" style="height: 400px; width: 500px">
                         <img src="images/MK-TIME.png" alt="" width="120" height="120" class="d-block mx-auto justify-content-center ms-auto mt-2">
                         <p class="text-center mt-2">Address: </p>
