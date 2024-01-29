@@ -96,6 +96,7 @@ while(1):
 
     playerinput = ""
 
+    # error check input for validity.
     while(playerinput not in choices):
         playerinput = input("Rock, Paper, or Scissors? ")
         playerinput = playerinput.capitalize()
@@ -109,6 +110,8 @@ while(1):
 
     print(f"You chose {playerinput} and the computer chose {computerinput}!")
 
+
+    # call RPS function
     rps(playerinput, computerinput)
 
     sleep(0.5)
@@ -118,6 +121,8 @@ while(1):
 
     sleep(0.5)
 
+
+    #play again loop and validity.
     playAgain = ""
     while(playAgain != "Yes" and playAgain != "No"):
         playAgain = input("Play again? Yes or No? ")
