@@ -82,7 +82,7 @@ html {
 }
 
 .searchbar{
-  
+  width: 50%;
   margin-top: auto;
   margin-bottom: auto;
   font-family: Arial, Helvetica, sans-serif
