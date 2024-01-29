@@ -10,6 +10,7 @@ As for the python project and javascript projects, I won't be adding the steps l
 
 I have now completed the SQL and Portfolio section of my bootcamp and I am ready to upload.
 
+The javascript challenge of Rock Paper Scissors is inside of "Other Projects" inside of my WWW web page, it has a functioning GUI.
 
 You may also navigate to 
 
