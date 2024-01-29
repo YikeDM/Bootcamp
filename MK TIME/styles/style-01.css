@@ -146,8 +146,10 @@ body {
     height: 100%;
 }
 
-/* animated bacgkround - from alvarotrigo.com -- I DO NOT OWN THIS -- */
+/* animated bacgkround - from alvarotrigo.com - https://alvarotrigo.com/blog/animated-backgrounds-css/ - -- I DO NOT OWN THIS -- */
 
+
+/* changed position fixed to support full browser width. */
 .background-container {
     pointer-events: none;
     width: 115%;
