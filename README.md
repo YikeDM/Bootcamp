@@ -9,3 +9,16 @@ Python Challenge - This has the Rock Paper Scissors task written in python inste
 As for the python project and javascript projects, I won't be adding the steps leading up to the project as most of the information is subjects i've already touched upon in other languages such as C and Python.
 
 I have now completed the SQL and Portfolio section of my bootcamp and I am ready to upload.
+
+
+You may also navigate to 
+
+https://github.com/YikeDM/spaceinvaders
+
+For my basic space-invaders inspired game on pygame(library required)
+
+and also
+
+https://github.com/YikeDM/self
+
+For a basic rock paper scissors & blackjack game I made as extra work for my python class.
