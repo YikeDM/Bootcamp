@@ -12,6 +12,8 @@ I have now completed the SQL and Portfolio section of my bootcamp and I am ready
 
 The javascript challenge of Rock Paper Scissors is inside of "Other Projects" inside of my WWW web page, it has a functioning GUI.
 
+The main portfolio website is under the direcetory "MK TIME", and contains a website designed by myself.
+
 You may also navigate to 
 
 https://github.com/YikeDM/spaceinvaders
